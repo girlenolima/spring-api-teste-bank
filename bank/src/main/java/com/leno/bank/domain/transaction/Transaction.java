@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode(of="id")
-public class transaction {
+public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,7 +38,7 @@ public class transaction {
 
 
 
-    public transaction() {
+    public Transaction() {
 
     }
 }
