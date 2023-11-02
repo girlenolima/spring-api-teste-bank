@@ -24,7 +24,7 @@ Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinhei
 * Este serviço deve ser RESTFul.
 
 ### Primeiros passos
-* Modelar os dados 
+* Modelar os dados (domain)
     * Usuario
     * Transferencia
 
@@ -39,4 +39,18 @@ Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinhei
 * Criar os repositories
     * UserRepository
     * TranferenciaRepository
+
+* Services (Regras de necogio)
+    * UserServices
+    * TransactionService
+    * NotificatonService
+
+* Criar os DTOs (Data Transfer Object ), normalmente com record em java.
+   * NotificationDTO
+   * TransactionDTO
+   * UserDTO
+
+* Pacote infra para configuraçoes 
+    * AppConfig
+  
   

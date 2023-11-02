@@ -3,11 +3,10 @@ package com.leno.bank.domain.transaction;
 
 import com.leno.bank.domain.user.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
+
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity(name="transactions")
@@ -16,17 +15,18 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode(of="id")
+@NoArgsConstructor
 public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Double value;
+    private BigDecimal amount;
 
     /* @ManyToOne
-    *  Um usuario pode ter varias transaçoes.
-    *  Uma transaçao so pode ter um usuario.
-    * */
+     *  Um usuário pode ter várias transações.
+     *  Uma transação só pode ter um usuário.
+     * */
     @ManyToOne
     @JoinColumn(name="sender_id")
     private User sender;
@@ -34,11 +34,9 @@ public class Transaction {
     @ManyToOne
     @JoinColumn(name="receiver_id")
     private User receiver;
+
     private LocalDate time;
 
 
-
-    public Transaction() {
-
-    }
 }
+
