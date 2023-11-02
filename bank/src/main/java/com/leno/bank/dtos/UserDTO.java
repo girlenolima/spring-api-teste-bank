@@ -1,5 +1,7 @@
 package com.leno.bank.dtos;
 
+import com.leno.bank.domain.user.Type;
+
 import java.math.BigDecimal;
 
 public record UserDTO(
@@ -8,5 +10,6 @@ public record UserDTO(
         String document,
         BigDecimal balance,
         String email,
-        String password) {
+        String password,
+        Type type) {
 }

@@ -53,4 +53,7 @@ Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinhei
 * Pacote infra para configuraçoes 
     * AppConfig
   
+* Controllers
+    * UserController
+  
   
