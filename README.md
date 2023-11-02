@@ -1,6 +1,6 @@
 ## DESAFIO BACKAND PICPAY 
 
-### ProBlema 
+### Problema 
 
 Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinheiro e realizam transferências entre eles. Vamos nos atentar somente ao fluxo de transferência entre dois usuários.
 
@@ -23,7 +23,7 @@ Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinhei
 
 * Este serviço deve ser RESTFul.
 
-### Primeiros passos
+### Primeiros passos , usando o excelente modelo de : Fernanda Kipper | Dev
 * Modelar os dados (domain)
     * Usuario
     * Transferencia
