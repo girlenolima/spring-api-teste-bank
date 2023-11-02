@@ -2,7 +2,6 @@ package com.leno.bank.infra;
 
 
 import com.leno.bank.dtos.ExceptionDTO;
-import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
